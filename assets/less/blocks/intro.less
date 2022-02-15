@@ -1,0 +1,76 @@
+.intro{    
+    color: white;
+    @media @tablet {
+        background-color: @brand-color;
+
+    }
+    @media @mobile {
+        background-color: @brand-color;
+    }
+
+        & .container--wide{
+            @media @desktop {
+                background-color: @brand-color;
+            }
+        }
+
+        & .container{
+            position: relative;
+        }
+
+        &__wrapper{
+            padding: 270px 0 220px 0;
+                @media @tablet {
+                    padding: 170px 0 150px;
+                }
+                @media @mobile {
+                    padding: 150px 0 35px 0;
+                }
+        }
+
+        &__heading{
+            font-size: 80px;
+            font-family: @font-heading;
+            margin-bottom: 40px;
+                @media @desktop {
+                    max-width: 600px;
+                    font-size: 80px;
+                }
+                @media @tablet {
+                    max-width: 500px;
+                    font-size: 60px;
+                }
+                @media @mobile {
+                 font-size: 38px;   /
+                 max-width: 320px;
+                }
+        }
+
+        &__description{
+            font-size: 20px;
+            font-family: @font-heading;
+            margin-bottom: 0;
+                @media @mobile {
+                    font-size: 16px;
+                }
+        }
+
+        &__logo{
+            position: absolute;
+            @media @desktop {
+                max-width: 200px;
+                top: 160px;
+                left: -25px;
+            }
+            @media @tablet {
+                top: 55px;
+                left: 0;
+            }
+            @media @mobile {
+                top: 35px;
+                left: 0;
+            }
+        }
+        
+
+}

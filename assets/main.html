@@ -1,0 +1,33 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+
+@@include('template/page-header.html')
+
+
+<main>
+    <h1 class="visually-hidden">Главная страница</h1>
+    <section class="intro">
+        <div class="container--wide">
+            <div class="container">
+                <div class="intro__wrapper">
+                    <div class="intro__logo">
+                        <img src="../img/intro-logo.svg" alt="">
+                    </div>
+                    <h2 class="intro__heading">ТЕХНОПАРК 
+                        «ИТ КРЫМ» </h2>
+                    <p class="intro__description">Инновационный ИТ-кластер <br>в городе Севастополе
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include('template/page-footer.html')
+@@include('template/popups.html')
+@@include('template/scripts.html')
+
+</body>
+</html>
