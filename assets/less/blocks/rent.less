@@ -1,0 +1,76 @@
+.rent{
+    &__wrapper{
+        padding: 25px 0 120px 0;
+    }
+    &__heading{
+        margin-bottom: 60px;
+        font-size: 40px;
+    }
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+            @media @tablet {
+                column-gap: 10px;
+            }
+            @media @mobile {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+            }
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 12px 4px rgba(127,147,157,0.15);
+        padding-bottom: 70px;
+            @media @tablet {
+                padding-bottom: 30px;
+            }
+    }
+    & img{
+        max-width: 100%;
+        height: auto;
+    }
+    &__img{
+        order: 1;
+        margin-bottom: 50px;
+            @media @tablet {
+                margin-bottom: 25px;
+            }
+    }
+    &__description{
+        order: 3;
+        margin-left: 50px;
+            @media @desktop {
+                width: 55%;
+                font-size: 11px;
+            }
+            @media @tablet {
+                margin-left: 10px;
+            }
+            @media @mobile {
+                margin-left: 20px;
+                width: 70%;
+            }
+    }
+    &__item-heading{
+        order: 2;
+        margin-bottom: 20px;
+        margin-left: 50px;
+            @media @desktop {
+                width: 55%;
+                font-size: 16px;
+            }
+            @media @tablet {
+                margin-left: 10px;
+            }
+            @media @mobile {
+                margin-left: 20px;
+                width: 70%;
+            }
+    }
+}

@@ -1,0 +1,102 @@
+.advantages{
+    &__top{
+        padding: 145px 0 300px 0;
+        background-color: #0095CE;
+    }
+    &__down{
+        padding: 110px 0 120px 0;
+        background-color: #E8EEF1;
+            @media @mobile {
+                background-color: white;
+            }
+            & .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 100px;
+                    @media @tablet, @mobile {
+                        grid-template-columns: 1fr;
+                       
+                    }
+            }
+    }
+    &__down-right{
+        background-image: url(../img/repeat.png);
+        padding: 40px 50px ;
+    }
+    &__down-left {
+        & h3{
+            font-size: 30px;
+            font-weight: 200;
+            margin-bottom: 30px;
+        }
+        & p{
+            margin-bottom: 60px;
+            line-height: 20px;
+            font-size: 13px;
+                @media @mobile {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+        }
+    }
+    &__heading{
+        color: white;
+        font-size: 30px;
+            @media @desktop {
+                width: 35%;
+            }
+    }
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px 40px;
+    }
+    &__item{
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 17px;
+        display: flex;
+        flex-direction: column;
+            & p{
+                @media @tablet, @mobile {
+                    text-align: center;
+                }
+            }
+    }
+    &__logo{
+        width: 40px;
+        height: 40px;
+        order: -1;
+        margin-bottom: 15px;
+            @media @tablet, @mobile {
+                margin: 0 auto;
+                margin-bottom: 15px;
+            }
+    }
+    &__link{
+        font-size: 12px;
+
+    }
+}
+
+.link{
+    padding-right: 35px;
+    position: relative;
+
+}
+
+.link::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/arrow.svg);
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
