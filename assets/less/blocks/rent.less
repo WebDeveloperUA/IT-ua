@@ -31,15 +31,18 @@
                 padding-bottom: 30px;
             }
     }
-    & img{
-        max-width: 100%;
-        height: auto;
-    }
     &__img{
         order: 1;
         margin-bottom: 50px;
+        height: 200px;
             @media @tablet {
                 margin-bottom: 25px;
+            }
+            & img{
+                max-width: 100%;
+                height: 200px;
+                object-fit: cover;
+                
             }
     }
     &__description{

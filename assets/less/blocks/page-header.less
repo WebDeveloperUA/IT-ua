@@ -3,6 +3,18 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		font-size: 30px;
+		color: white;
+		border: 1px @brand-color solid;
+		padding: 5px;
+		background-color: aqua;
+			& a{
+				color: white;
+				font-weight: bold;
+			}
+			@media @tablet {
+				padding: 5px 18px;
+			}
 			@media @mobile {
 				display: none;
 			}

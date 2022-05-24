@@ -345,7 +345,7 @@ template {
   -webkit-appearance: none;
   display: block;
   width: 240px;
-  background-color: #0095CE;
+  background-color: aqua;
   text-align: center;
   border-radius: 0;
   color: #fff;
@@ -369,14 +369,14 @@ template {
   line-height: 1;
 }
 .btn:hover {
-  background-color: #00a7e8;
+  background-color: #1affff;
   box-shadow: none;
 }
 .btn:active {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
   box-shadow: none;
-  background-color: #00709b;
+  background-color: #00cccc;
 }
 .btn:active,
 .btn:focus,
@@ -582,6 +582,20 @@ template {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  font-size: 30px;
+  color: white;
+  border: 1px aqua solid;
+  padding: 5px;
+  background-color: aqua;
+}
+.page-header__logo a {
+  color: white;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header__logo {
+    padding: 5px 18px;
+  }
 }
 @media screen and (max-width: 767px) {
   .page-header__logo {
@@ -740,7 +754,7 @@ template {
   font-size: 12px;
 }
 .button--base {
-  background-color: #0095CE;
+  background-color: aqua;
   color: white;
   padding: 15px 30px;
 }
@@ -760,36 +774,77 @@ template {
 }
 .intro {
   color: white;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .intro {
-    background-color: #0095CE;
-  }
-}
-@media screen and (max-width: 767px) {
-  .intro {
-    background-color: #0095CE;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .intro .container--wide {
-    background-color: #0095CE;
-  }
-}
-.intro .container {
   position: relative;
 }
-.intro__wrapper {
-  padding: 270px 0 220px 0;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .intro__wrapper {
-    padding: 170px 0 150px;
+  .intro {
+    background-color: aqua;
   }
 }
 @media screen and (max-width: 767px) {
-  .intro__wrapper {
-    padding: 150px 0 35px 0;
+  .intro {
+    background-color: aqua;
+  }
+}
+.intro .container--wide {
+  height: 740px;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .intro .container--wide {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+.intro .container--wide .container {
+  position: absolute;
+  min-width: 320px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  top: 200px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .intro .container--wide .container {
+    top: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .intro .container--wide .container {
+    top: 150px;
+  }
+}
+.intro__right {
+  position: relative;
+  width: 70%;
+  right: 0;
+  height: 100%;
+}
+.intro__right img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .intro__right {
+    width: 100%;
+  }
+}
+.intro__left {
+  width: 30%;
+  height: 100%;
+  background-color: aqua;
+}
+@media screen and (max-width: 767px) {
+  .intro__left {
+    width: 100%;
   }
 }
 .intro__heading {
@@ -831,19 +886,19 @@ template {
 @media screen and (min-width: 1200px) {
   .intro__logo {
     max-width: 200px;
-    top: 160px;
+    top: -135px;
     left: -25px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .intro__logo {
-    top: 55px;
+    top: -125px;
     left: 0;
   }
 }
 @media screen and (max-width: 767px) {
   .intro__logo {
-    top: 35px;
+    top: -130px;
     left: 0;
   }
 }
@@ -977,19 +1032,21 @@ template {
     padding-bottom: 30px;
   }
 }
-.rent img {
-  max-width: 100%;
-  height: auto;
-}
 .rent__img {
   -ms-flex-order: 1;
       order: 1;
   margin-bottom: 50px;
+  height: 200px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .rent__img {
     margin-bottom: 25px;
   }
+}
+.rent__img img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 .rent__description {
   -ms-flex-order: 3;
@@ -1038,7 +1095,7 @@ template {
 }
 .advantages__top {
   padding: 145px 0 300px 0;
-  background-color: #0095CE;
+  background-color: aqua;
 }
 .advantages__down {
   padding: 110px 0 120px 0;
