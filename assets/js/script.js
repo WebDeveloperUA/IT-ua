@@ -74,6 +74,15 @@ $(document.body).on('click','[data-toggle="dismiss"]',function(e) {
 	closeModals();
 });
 
+var play = document.querySelector('.advantages__play');
+var video = document.querySelector('.advantages__top video');
+
+play.addEventListener('click', () => {
+	video.play();
+	video.setAttribute('controls', 'controls');
+	play.classList.add('advantages__play--hidden')
+})
+
 
 
 

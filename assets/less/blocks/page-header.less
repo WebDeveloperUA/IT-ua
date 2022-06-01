@@ -5,12 +5,22 @@
 		align-items: center;
 		font-size: 30px;
 		color: white;
-		border: 1px @brand-color solid;
-		padding: 5px;
+		// padding: 5px;
 		background-color: aqua;
+		transition: 1s;
+			&:hover{
+				background-color: white;
+			}
 			& a{
 				color: white;
 				font-weight: bold;
+				text-decoration: none;
+				padding: 5px 20px ;
+				margin: 0;
+					&:hover{
+						color: @brand-color;
+						transition: 1s;
+					}
 			}
 			@media @tablet {
 				padding: 5px 18px;
@@ -79,6 +89,12 @@
 			font-size: 20px;
 			font-family: @font-heading;
 			font-weight: bold;
+			text-decoration: none;
+			padding: 15px 0;
+			&:hover{
+                color: @brand-color;
+                transition: 0.7s;
+            }
 		}
 		@media @mobile {
 			margin-bottom: 20px;
@@ -87,6 +103,9 @@
 	&__button-lang{
 		@media @mobile {
 			display: none;
+		}
+		&:hover{
+			
 		}
 		&--top{
 			display: none;

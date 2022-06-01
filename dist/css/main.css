@@ -584,13 +584,22 @@ template {
       align-items: center;
   font-size: 30px;
   color: white;
-  border: 1px aqua solid;
-  padding: 5px;
   background-color: aqua;
+  transition: 1s;
+}
+.page-header__logo:hover {
+  background-color: white;
 }
 .page-header__logo a {
   color: white;
   font-weight: bold;
+  text-decoration: none;
+  padding: 5px 20px ;
+  margin: 0;
+}
+.page-header__logo a:hover {
+  color: aqua;
+  transition: 1s;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header__logo {
@@ -696,6 +705,12 @@ template {
   font-size: 20px;
   font-family: 'Gotham Pro', sans-serif;
   font-weight: bold;
+  text-decoration: none;
+  padding: 15px 0;
+}
+.page-header__phone a:hover {
+  color: aqua;
+  transition: 0.7s;
 }
 @media screen and (max-width: 767px) {
   .page-header__phone {
@@ -745,6 +760,11 @@ template {
   text-transform: uppercase;
   font-weight: bold;
 }
+.menu a:hover {
+  background-color: aqua;
+  color: white;
+  transition: 0.5s;
+}
 .button {
   border: none;
   background-color: transparent;
@@ -763,9 +783,30 @@ template {
     width: 100%;
   }
 }
+.button__reset {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
 .button--lang {
   padding: 15px;
   border: 3px solid #E8EEF1;
+}
+.button--lang:hover {
+  border: 3px solid aqua;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.button__resident {
+  border: 1px solid transparent;
+}
+.button__resident:hover {
+  background-color: white;
+  color: aqua;
+  border: 1px solid aqua;
+  cursor: pointer;
+  transition: 0.7s;
 }
 .social {
   padding: 0;
@@ -851,10 +892,11 @@ template {
   font-size: 80px;
   font-family: 'Gotham Pro', sans-serif;
   margin-bottom: 40px;
+  text-shadow: 2px 2px #989898;
 }
 @media screen and (min-width: 1200px) {
   .intro__heading {
-    max-width: 600px;
+    max-width: 650px;
     font-size: 80px;
   }
 }
@@ -966,8 +1008,9 @@ template {
   }
 }
 .resident__heading {
-  font-size: 19px;
+  font-size: 15px;
   margin-bottom: 30px;
+  text-align: center;
 }
 .resident__form {
   width: 100%;
@@ -1032,6 +1075,11 @@ template {
     padding-bottom: 30px;
   }
 }
+.rent__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: 0.7s;
+}
 .rent__img {
   -ms-flex-order: 1;
       order: 1;
@@ -1094,8 +1142,20 @@ template {
   }
 }
 .advantages__top {
-  padding: 145px 0 300px 0;
   background-color: aqua;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages__top {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .advantages__top {
+    height: 400px;
+  }
 }
 .advantages__down {
   padding: 110px 0 120px 0;
@@ -1137,15 +1197,6 @@ template {
     line-height: 30px;
   }
 }
-.advantages__heading {
-  color: white;
-  font-size: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .advantages__heading {
-    width: 35%;
-  }
-}
 .advantages__list {
   list-style: none;
   padding: 0;
@@ -1183,6 +1234,34 @@ template {
 }
 .advantages__link {
   font-size: 12px;
+}
+.advantages__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+}
+.advantages__play svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+.advantages__play svg:hover {
+  color: red;
+  fill: red;
+}
+.advantages__play--hidden {
+  display: none;
+}
+.advantages video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .link {
   padding-right: 35px;

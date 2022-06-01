@@ -13,8 +13,29 @@
                     width: 100%;
                 }
         }
+        &__reset{
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+        }
         &--lang{
             padding: 15px;
             border: 3px solid #E8EEF1;
+                &:hover{
+                    border: 3px solid @brand-color;
+                    cursor: pointer;
+                    transition: 0.7s;
+                }
+        }
+        &__resident{
+            border: 1px solid transparent;
+            &:hover{
+                background-color: white;
+                color: @brand-color;
+                border: 1px solid @brand-color;
+                cursor: pointer;
+                transition: 0.7s;
+            }
         }
 }

@@ -1,7 +1,15 @@
 .advantages{
     &__top{
-        padding: 145px 0 300px 0;
         background-color: @brand-color;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+            @media @tablet {
+                height: 450px;
+            }
+            @media @mobile {
+                height: 400px;
+            }
     }
     &__down{
         padding: 110px 0 120px 0;
@@ -39,13 +47,6 @@
                 }
         }
     }
-    &__heading{
-        color: white;
-        font-size: 30px;
-            @media @desktop {
-                width: 35%;
-            }
-    }
     &__list{
         list-style: none;
         padding: 0;
@@ -78,6 +79,35 @@
     }
     &__link{
         font-size: 12px;
+
+    }
+    &__play{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+            & svg{
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                top: 0;
+                left: 0;
+                    &:hover{
+                        color: red;
+                        fill: red;
+                    }
+            }
+            &--hidden{
+                display: none;
+            }
+    }
+    & video{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 
     }
 }
