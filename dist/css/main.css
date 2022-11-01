@@ -589,12 +589,14 @@ template {
 }
 .page-header__logo:hover {
   background-color: white;
+  border: 1px solid aqua;
+  transition: 1s;
 }
 .page-header__logo a {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  padding: 5px 20px ;
+  padding: 5px 20px;
   margin: 0;
 }
 .page-header__logo a:hover {
@@ -749,6 +751,9 @@ template {
     padding: 0;
   }
 }
+.page-header__social {
+  list-style: none;
+}
 .menu {
   list-style: none;
   padding: 0;
@@ -759,11 +764,11 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  border: 1px solid transparent;
 }
 .menu a:hover {
-  background-color: aqua;
-  color: white;
-  transition: 0.5s;
+  color: aqua;
+  border-bottom: 1px solid aqua;
 }
 .button {
   border: none;
@@ -807,11 +812,6 @@ template {
   border: 1px solid aqua;
   cursor: pointer;
   transition: 0.7s;
-}
-.social {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 .intro {
   color: white;
@@ -1304,8 +1304,13 @@ template {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   -webkit-column-gap: 30px;
           column-gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__social {
@@ -1325,7 +1330,15 @@ template {
     margin-bottom: 35px;
   }
 }
-.page-footer__left {
+.page-footer__social a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.page-footer__left-column {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -1333,24 +1346,24 @@ template {
   -webkit-column-gap: 20px;
           column-gap: 20px;
 }
-.page-footer__left p {
+.page-footer__left-column p {
   padding: 0;
   margin: 0;
 }
 @media screen and (max-width: 767px) {
-  .page-footer__left p {
+  .page-footer__left-column p {
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .page-footer__left {
+  .page-footer__left-column {
     max-width: 450px;
     margin: 0 auto;
     margin-bottom: 35px;
   }
 }
 @media screen and (max-width: 767px) {
-  .page-footer__left {
+  .page-footer__left-column {
     display: block;
     margin-bottom: 35px;
   }
@@ -1516,6 +1529,11 @@ template {
 .contact-us__policy {
   margin-top: 30px;
   color: #7F939D;
+}
+@media screen and (min-width: 1200px) {
+  .customer--wide {
+    background-color: aqua;
+  }
 }
 body {
   position: relative;

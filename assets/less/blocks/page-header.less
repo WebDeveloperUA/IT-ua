@@ -1,133 +1,163 @@
 .page-header {
-	&__logo{
+	&__logo {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		font-size: 30px;
 		color: white;
-		// padding: 5px;
 		background-color: aqua;
 		transition: 1s;
-			&:hover{
-				background-color: white;
+
+		&:hover {
+			background-color: white;
+			border: 1px solid @brand-color;
+			transition: 1s;
+		}
+
+		& a {
+			color: white;
+			font-weight: bold;
+			text-decoration: none;
+			padding: 5px 20px;
+			margin: 0;
+
+			&:hover {
+				color: @brand-color;
+				transition: 1s;
 			}
-			& a{
-				color: white;
-				font-weight: bold;
-				text-decoration: none;
-				padding: 5px 20px ;
-				margin: 0;
-					&:hover{
-						color: @brand-color;
-						transition: 1s;
-					}
-			}
-			@media @tablet {
-				padding: 5px 18px;
-			}
-			@media @mobile {
-				display: none;
-			}
+		}
+
+		@media @tablet {
+			padding: 5px 18px;
+		}
+
+		@media @mobile {
+			display: none;
+		}
 	}
-	&__wrapper{
+
+	&__wrapper {
 		padding: 25px 0;
-			@media @desktop {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				column-gap: 20px;
-			}
+
+		@media @desktop {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			column-gap: 20px;
+		}
 	}
-	&__left-bar{
+
+	&__left-bar {
 		display: flex;
 		column-gap: 50px;
-			@media @tablet {
-				justify-content: space-between;
-				margin-bottom: 20px;
-			}
-			@media @mobile {
-				display: block;
-				margin-bottom: 70px;
-			}
+
+		@media @tablet {
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+
+		@media @mobile {
+			display: block;
+			margin-bottom: 70px;
+		}
 	}
-	&__menu{
+
+	&__menu {
 		display: flex;
 		justify-content: space-between;
 		column-gap: 10px;
-			& a{
-				padding: 15px 0;
-				display: block;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-					@media @mobile {
-						justify-content: left;
-					}
-			}
+
+		& a {
+			padding: 15px 0;
+			display: block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
 			@media @mobile {
-				display: block;
+				justify-content: left;
 			}
+		}
+
+		@media @mobile {
+			display: block;
+		}
 	}
-	&__right-bar{
+
+	&__right-bar {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		column-gap: 40px;
-			@media @tablet {
-				justify-content: left;
-			}
-			@media @mobile {
-				display: block;
-				margin-bottom: 25px;
-			}
+
+		@media @tablet {
+			justify-content: left;
+		}
+
+		@media @mobile {
+			display: block;
+			margin-bottom: 25px;
+		}
 	}
-	&__phone{
+
+	&__phone {
 		padding: 0;
 		margin: 0;
-		& a{
+
+		& a {
 			color: black;
 			font-size: 20px;
 			font-family: @font-heading;
 			font-weight: bold;
 			text-decoration: none;
 			padding: 15px 0;
-			&:hover{
-                color: @brand-color;
-                transition: 0.7s;
-            }
+
+			&:hover {
+				color: @brand-color;
+				transition: 0.7s;
+			}
 		}
+
 		@media @mobile {
 			margin-bottom: 20px;
 		}
 	}
-	&__button-lang{
+
+	&__button-lang {
 		@media @mobile {
 			display: none;
 		}
-		&:hover{
-			
-		}
-		&--top{
+
+		&:hover {}
+
+		&--top {
 			display: none;
-				@media @mobile {
-					display: block;
-					margin-bottom: 70px !important;
-				}
-		}
-	}
-	&__social{
-		display: none;
+
 			@media @mobile {
-				display: flex;
-				justify-content: space-around;
+				display: block;
+				margin-bottom: 70px !important;
 			}
+		}
 	}
 
-	& .container--wide .container{
-			@media @desktop {
-				width:auto;
-				margin: auto;
-				padding: 0;
-			}
+	&__social {
+		display: none;
+
+		@media @mobile {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+
+	& .container--wide .container {
+		@media @desktop {
+			width: auto;
+			margin: auto;
+			padding: 0;
+		}
+	}
+
+	&__social {
+		list-style: none;
 	}
 }
