@@ -1247,7 +1247,7 @@ template {
   }
 }
 .advantages__down-right {
-  background-image: url(../img/repeat.png);
+  background-image: url(./img/repeat.png);
   padding: 40px 50px;
 }
 .advantages__down-left h3 {
@@ -1339,7 +1339,7 @@ template {
 .link::before {
   position: absolute;
   content: "";
-  background-image: url(../img/arrow.svg);
+  background-image: url(./img/arrow.svg);
   top: 0;
   right: 0;
   width: 30px;
@@ -1537,7 +1537,7 @@ template {
   margin-bottom: 10px;
 }
 .contact-us .container--wide {
-  background-image: url(../img/cover.jpg);
+  background-image: url(./img/cover.jpg);
 }
 .contact-us__form {
   right: 0;
@@ -1551,7 +1551,7 @@ template {
   }
 }
 .customers-intro__right-wrapper {
-  background-image: url(../img/customers__pict.png);
+  background-image: url(./img/customers__pict.png);
 }
 .rental {
   position: relative;
@@ -1644,7 +1644,7 @@ template {
   position: absolute;
   width: 25px;
   height: 13px;
-  background-image: url(../img/arrow.svg);
+  background-image: url(./img/arrow.svg);
   bottom: 30px;
   right: 30px;
   cursor: pointer;
@@ -1694,7 +1694,7 @@ template {
   .pros .container--wide::after {
     content: "";
     position: absolute;
-    background-image: url(../img/pros-back.png);
+    background-image: url(./img/pros-back.png);
     top: 50px;
     left: 60px;
     width: 315px;
@@ -1822,7 +1822,7 @@ template {
   position: relative;
 }
 .become-customer .container--wide {
-  background-image: url(../img/become-cust.png);
+  background-image: url(./img/become-cust.png);
 }
 .become-customer__form {
   left: 0;
@@ -1950,7 +1950,7 @@ template {
   height: 25px;
   top: 35px;
   left: 0;
-  background-image: url(../img/arrow2.svg);
+  background-image: url(./img/arrow2.svg);
   background-repeat: no-repeat;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1962,7 +1962,7 @@ template {
   height: 25px;
   top: 39px;
   right: 0;
-  background-image: url(../img/arrow2.svg);
+  background-image: url(./img/arrow2.svg);
   background-repeat: no-repeat;
   -webkit-transform: rotate(0);
           transform: rotate(0);
@@ -2041,7 +2041,7 @@ template {
   position: relative;
 }
 .office-request .container--wide {
-  background-image: url(../img/rent.jpg);
+  background-image: url(./img/rent.jpg);
   background-size: cover;
 }
 .office-request__form {
@@ -2128,13 +2128,13 @@ template {
   background-size: contain;
 }
 .coworking-types__item:nth-child(1)::before {
-  background-image: url(../img/coworking1.svg);
+  background-image: url(./img/coworking1.svg);
 }
 .coworking-types__item:nth-child(2)::before {
-  background-image: url(../img/coworking2.svg);
+  background-image: url(./img/coworking2.svg);
 }
 .coworking-types__item:nth-child(3)::before {
-  background-image: url(../img/coworking3.svg);
+  background-image: url(./img/coworking3.svg);
 }
 @media screen and (max-width: 767px) {
   .coworking-types__info {
@@ -2257,7 +2257,7 @@ template {
   }
 }
 .investors-intro__right-wrapper {
-  background-image: url(../img/investors.jpg);
+  background-image: url(./img/investors.jpg);
 }
 .investors-stages .container--wide {
   background-color: rgba(232, 238, 241, 0.3);
@@ -2387,7 +2387,7 @@ template {
   height: 15px;
   top: 0;
   left: 0;
-  background-image: url(../img/stage.svg);
+  background-image: url(./img/stage.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2496,7 +2496,7 @@ template {
   content: "";
   width: 25px;
   height: 15px;
-  background-image: url(../img/arrow.svg);
+  background-image: url(./img/arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   bottom: 0;
@@ -2548,7 +2548,7 @@ template {
   }
 }
 .education-intro__right-wrapper {
-  background-image: url(../img/education.jpg);
+  background-image: url(./img/education.jpg);
 }
 .education-program__wrapper {
   padding: 100px 0;
@@ -2725,7 +2725,7 @@ template {
   position: relative;
 }
 .education-form .container--wide {
-  background-image: url(../img/rent.jpg);
+  background-image: url(./img/rent.jpg);
   background-size: cover;
 }
 .education-form__form {
