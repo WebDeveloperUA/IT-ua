@@ -1,10 +1,5 @@
-@@include('template/head.html', {
-"pagetitle": "Main page",
-"bodyclass": ""
-})
-
+@@include('template/head.html', { "pagetitle": "Main page", "bodyclass": "" })
 @@include('template/page-header.html')
-
 
 <main>
     <h1 class="visually-hidden">Main page</h1>
@@ -12,18 +7,15 @@
         <div class="container--wide">
             <div class="container">
                 <div class="intro__logo">
-                    <img src="../img/intro-logo.svg" alt="">
+                    <img src="../img/intro-logo.svg" alt="" />
                 </div>
                 <h2 class="intro__heading">Innovative technologies</h2>
-                <p class="intro__description">Located in Sidney
-                </p>
+                <p class="intro__description">Located in Sidney</p>
             </div>
-            <div class="intro__left">
-            </div>
+            <div class="intro__left"></div>
             <div class="intro__right">
-                <img src="./img/foto.jpg" alt="">
+                <img src="./img/foto.jpg" alt="" />
             </div>
-
         </div>
     </section>
     <section class="about">
@@ -31,25 +23,42 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__info">
-                    <h3 class="about__heading">Perfect Conditions
-                        for startups</h3>
-                    <p>«TECHї» is an innovative IT technopark that will make it possible to achieve a significant
-                        technological breakthrough.
+                    <h3 class="about__heading">
+                        Perfect Conditions for startups
+                    </h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Expedita perferendis eveniet repellendus obcaecati
+                        voluptatibus culpa ut eos illo consectetur dolorum, nemo
+                        eligendi omnis pariatur possimus, consequatur
+                        exercitationem. Tempora, corporis aspernatur!
                     </p>
-                    <p>Sidney is a place with a unique natural landscape, excellent ecology - ideal conditions for
-                        innovative activity. Located in the city of Sidney - the pearl of Ukrainian lands, "TECHї" is an
-                        innovative platform that can provide everything that a modern IT specialist needs.</p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Minus omnis, officiis libero eius quam non et
+                        incidunt voluptate in est debitis earum eaque inventore
+                        ipsa, aperiam possimus accusantium culpa. Similique.
+                    </p>
                 </div>
                 <div class="about__resident resident" id="advantages__link">
-                    <h3 class="resident__heading">Become a resident <br>
-                        on special terms</h3>
+                    <h3 class="resident__heading">
+                        Become a resident <br />
+                        on special terms
+                    </h3>
                     <form class="resident__form" action="post">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="E-mail or Phone">
-                        <button class="resident__button button button--base" type="submit">BECOME RESIDENT</button>
+                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="E-mail or Phone" />
+                        <button
+                            class="resident__button button button--base button--hover-effect"
+                            type="submit"
+                        >
+                            BECOME RESIDENT
+                        </button>
                     </form>
-                    <p class="resident__policy">By clicking on the button, you agree to the terms of the "Privacy
-                        Policy"</p>
+                    <p class="resident__policy">
+                        By clicking on the button, you agree to the terms of the
+                        "Privacy Policy"
+                    </p>
                 </div>
             </div>
         </div>
@@ -58,25 +67,41 @@
         <div class="container">
             <div class="rent__wrapper">
                 <h1 class="rent__heading">Facility</h1>
-                <ul class="rent__list">
-                    <li class="rent__item">
-                        <h2 class="rent__item-heading">Office
-                            space</h2>
-                        <p class="rent__description">Comfortable offices for teams from 5
-                            up to 20 people</p>
-                        <div class="rent__img"><img src="./img/rent1.jpg" alt=""></div>
+                <ul class="brick-list">
+                    <li class="rent__item brick-list__item">
+                        <a href="offices.html">
+                            <h2 class="rent__item-heading">Office space</h2>
+                            <p class="rent__description">
+                                Comfortable offices for teams from 5 up to 20
+                                people
+                            </p>
+                            <div class="rent__img">
+                                <img src="./img/rent1.jpg" alt="" />
+                            </div>
+                        </a>
                     </li>
-                    <li class="rent__item">
-                        <h2 class="rent__item-heading">Coworking</h2>
-                        <p class="rent__description">Individual jobs
-                            for guests and residents</p>
-                        <div class="rent__img"><img src="./img/rent2.jpg" alt=""></div>
+                    <li class="rent__item brick-list__item">
+                        <a href="coworking.html">
+                            <h2 class="rent__item-heading">Coworking</h2>
+                            <p class="rent__description">
+                                Individual jobs for guests and residents
+                            </p>
+                            <div class="rent__img">
+                                <img src="./img/rent2.jpg" alt="" />
+                            </div>
+                        </a>
                     </li>
-                    <li class="rent__item">
-                        <h2 class="rent__item-heading">Conference rooms</h2>
-                        <p class="rent__description">Conference halls with capacity
-                            from 50 to 250 people</p>
-                        <div class="rent__img"><img src="./img/rent3.jpg" alt=""></div>
+                    <li class="rent__item brick-list__item">
+                        <a href="offices.html">
+                            <h2 class="rent__item-heading">Conference rooms</h2>
+                            <p class="rent__description">
+                                Conference halls with capacity from 50 to 250
+                                people
+                            </p>
+                            <div class="rent__img">
+                                <img src="./img/rent3.jpg" alt="" />
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -85,61 +110,92 @@
     <section class="advantages">
         <div class="container--wide">
             <div class="advantages__top">
-                <video src="./img/nyc.mp4" poster="./img/poster.webp"></video>
+                <video
+                    class="advantages__video"
+                    src="./img/nyc.mp4"
+                    poster="./img/poster.webp"
+                ></video>
                 <button class="advantages__play button__reset">
-                    <svg class="advantages__play" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
-                    viewBox="0 0 390 390" style="enable-background:new 0 0 390 390;" xml:space="preserve">
-                    <g>
+                    <svg
+                        class="advantages__play"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="48px"
+                        height="48px"
+                        viewBox="0 0 390 390"
+                        style="enable-background: new 0 0 390 390"
+                        xml:space="preserve"
+                    >
                         <g>
-                            <path d="M195,0C87.303,0,0,87.303,0,195c0,107.697,87.303,195,195,195c107.697,0,195-87.303,195-195C390,87.303,302.697,0,195,0z
+                            <g>
+                                <path
+                                    d="M195,0C87.303,0,0,87.303,0,195c0,107.697,87.303,195,195,195c107.697,0,195-87.303,195-195C390,87.303,302.697,0,195,0z
 			 M253.871,211.921l-66.328,66.326c-4.578,4.577-10.702,7.011-16.927,7.011c-3.085,0-6.189-0.594-9.152-1.82
 			c-8.94-3.704-14.774-12.431-14.774-22.106V128.669c0-9.676,5.834-18.403,14.774-22.108c8.94-3.701,19.23-1.654,26.079,5.191
-			l66.328,66.328C263.215,187.424,263.215,202.576,253.871,211.921z" />
+			l66.328,66.328C263.215,187.424,263.215,202.576,253.871,211.921z"
+                                />
+                            </g>
                         </g>
-                    </g>
-
-                </svg>
+                    </svg>
                 </button>
             </div>
             <div class="advantages__down">
                 <div class="container">
                     <div class="advantages__down-left">
-                        <h3>Innovative
-                            IT technopark that will allow
-                            achieve significant
-                            technological breakthrough</h3>
-                        <p>Sidney is a place with a unique natural landscape, excellent ecology - ideal conditions for
-                            innovative activities. Located in the city of Sidney, the pearl of lands, is an innovative
-                            platform that can provide everything that a modern IT specialist needs.</p>
-                        <a class="advantages__link link" href="#advantages__link">BECOME RESIDENT</a>
+                        <h3>
+                            Innovative IT technopark that will allow achieve
+                            significant technological breakthrough
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Fuga, consectetur. Iure, et exercitationem.
+                            Ipsa laborum blanditiis veniam quia nisi
+                            consequuntur ipsam quod modi? Libero eveniet
+                            blanditiis corporis qui hic consectetur?
+                        </p>
+                        <a
+                            class="advantages__link link"
+                            href="#advantages__link"
+                            >BECOME RESIDENT</a
+                        >
                     </div>
                     <div class="advantages__down-right">
                         <ul class="advantages__list">
                             <li class="advantages__item">
-                                <p>Have a comfortable, productive work environment</p>
+                                <p>
+                                    Have a comfortable, productive work
+                                    environment
+                                </p>
                                 <div class="advantages__logo">
-                                    <img src="./img/logo1.png" alt="">
+                                    <img src="./img/logo1.png" alt="" />
                                 </div>
                             </li>
                             <li class="advantages__item">
-                                <p>Have the opportunity to relax after hard work</p>
+                                <p>
+                                    Have the opportunity to relax after hard
+                                    work
+                                </p>
                                 <div class="advantages__logo">
-                                    <img src="./img/logo2.png" alt="">
+                                    <img src="./img/logo2.png" alt="" />
                                 </div>
                             </li>
                             <li class="advantages__item">
-                                <p>Be part of a big
-                                    and great project</p>
+                                <p>Be part of a big and great project</p>
                                 <div class="advantages__logo">
-                                    <img src="./img/logo3.png" alt="">
+                                    <img src="./img/logo3.png" alt="" />
                                 </div>
                             </li>
                             <li class="advantages__item">
-                                <p>Plunge into the atmosphere of technological development, get
-                                    invaluable experience</p>
+                                <p>
+                                    Plunge into the atmosphere of technological
+                                    development, get invaluable experience
+                                </p>
                                 <div class="advantages__logo">
-                                    <img src="./img/logo4.png" alt="">
+                                    <img src="./img/logo4.png" alt="" />
                                 </div>
                             </li>
                         </ul>
@@ -155,56 +211,66 @@
                 <h2 class="news__heading">NEWS</h2>
                 <ul class="news__list">
                     <li class="news__item link">
-                        <h3 class="news__item-heading">They took part
-                            in the "Business platform" - forum
-                            for small and medium businesses.</h3>
+                        <h3 class="news__item-heading">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quo, iste!
+                        </h3>
                         <span class="news__date">11 september 2021</span>
                     </li>
                     <li class="news__item link">
-                        <h3 class="news__item-heading">Technopark project
-                            was presented
-                            at the investment forum
-                            in Kyiv</h3>
+                        <h3 class="news__item-heading">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit.
+                        </h3>
                         <span class="news__date">11 september 2021</span>
                     </li>
                     <li class="news__item link">
-                        <h3 class="news__item-heading">Why does a business need a cluster?</h3>
+                        <h3 class="news__item-heading">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </h3>
                         <span class="news__date">11 september 2021</span>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us form-box">
         <div class="container--wide">
             <div class="container">
-                <form class="contact-us__form" action="post">
-                    <h2 class="contact-us__heading">Write to us <br>
-                        filling out the form</h2>
+                <form class="form-box__form contact-us__form" action="post">
+                    <h2 class="form-box__heading">
+                        Write to us <br />
+                        filling out the form
+                    </h2>
                     <label>
-                        <input placeholder="Name" type="text">
+                        <input placeholder="Name" type="text" />
                     </label>
                     <label>
-                        <input placeholder="E-mail" type="text">
+                        <input placeholder="E-mail" type="text" />
                     </label>
                     <label>
-                        <input type="tel" placeholder="Phone">
+                        <input type="tel" placeholder="Phone" />
                     </label>
                     <label>
-                        <input type="text" placeholder="Message">
+                        <input type="text" placeholder="Message" />
                     </label>
-                    <button class="contact-us__button button button--base" type="submit">LEARN MORE</button>
-                    <p class="contact-us__policy">By clicking on the button, you agree to the terms <a href="#">"Privacy
-                            Policy"</a></p>
+                    <button
+                        class="form-box__button button button--base button--hover-effect"
+                        type="submit"
+                    >
+                        LEARN MORE
+                    </button>
+                    <p class="form-box__policy">
+                        By clicking on the button, you agree to the terms
+                        <a href="#">"Privacy Policy"</a>
+                    </p>
                 </form>
             </div>
         </div>
     </section>
-
 </main>
 
-@@include('template/page-footer.html')
-@@include('template/popups.html')
+@@include('template/page-footer.html') @@include('template/popups.html')
 @@include('template/scripts.html')
 
 </body>

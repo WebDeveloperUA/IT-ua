@@ -1,16 +1,20 @@
-@@include('template/head.html', {
-	"pagetitle": "Страницы", 
-	"bodyclass": ""
-})
+@@include('template/head.html', { "pagetitle": "Страницы", "bodyclass": "" })
 
-
-<ul style="padding-top: 100px;">
-	<li><a href="start-page.html">Template</a></li>
-	<li><a href="main.html">Main page</a></li>
-	<li><a href="customers.html">Customers</a></li>
-	<br>
+<ul style="padding-top: 100px">
+    <li><a href="main.html">Main page</a></li>
+    <li>
+        <a href="customers.html">Customers</a>
+        <ul>
+            <li><a href="offices.html">Offices</a></li>
+            <li><a href="coworking.html">Coworking</a></li>
+        </ul>
+    </li>
+    <li><a href="investors.html">Investors</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contacts.html">Contacts</a></li>
+    <br />
 </ul>
-	
-	
+
 </body>
 </html>

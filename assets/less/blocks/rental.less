@@ -1,0 +1,44 @@
+.rental {
+    position: relative;
+    @media @desktop {
+        top: 100px;
+    }
+    &__heading {
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    &__description {
+        margin-bottom: 60px;
+        font-size: 13px;
+        text-align: justify;
+        @media @desktop {
+            width: 40%;
+        }
+    }
+    &__item {
+        padding: 40px 50px;
+        background-color: white;
+        z-index: 100;
+        @media @tablet {
+            padding: 20px 30px;
+        }
+    }
+    &__logo {
+        width: 45px;
+        height: 45px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        @media @mobile {
+            margin-bottom: 25px;
+        }
+    }
+    &__item-header {
+        @media @mobile {
+            margin-bottom: 25px;
+        }
+    }
+}

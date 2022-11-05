@@ -1,25 +1,192 @@
-@@include('template/head.html', {
-	"pagetitle": "Customers",
-	"bodyclass": ""
-})
-
+@@include('template/head.html', { "pagetitle": "Customers", "bodyclass": "" })
 @@include('template/page-header.html')
-
 
 <main>
     <h1 class="visually-hidden">Info for customers</h1>
-	<section class="customers">
-		<div class="container--wide">
-			<div class="container">
-				<h2 class="customers__heading">Customers</h2>
-				<p class="customers__description">Резиденты ИТ-технопарка могут воспользоваться базовой услугой аренды помещений и использовать полный спектр дополнительных услуг уверенного старта для высокотехнологичного бизнеса (юридические, бухгалтерские услуги, лаборатория прототипирования, хостинг виртуальной инфраструктуры и прочее).</p>
-			</div>
-		</div>
-	</section>
+    <section class="customers-intro sample-intro">
+        <div class="container--wide">
+            <div>
+                <div class="sample-intro__left-wrapper"></div>
+                <div
+                    class="sample-intro__right-wrapper customers-intro__right-wrapper"
+                ></div>
+            </div>
+            <div class="container">
+                <div class="sample-intro__wrapper">
+                    <h2 class="sample-intro__heading">Customers</h2>
+                    <p class="sample-intro__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Impedit, molestias. Reprehenderit ullam, obcaecati
+                        corporis tempora, deserunt nam necessitatibus ea, cumque
+                        sunt laudantium quae ab maiores quo? Sapiente
+                        consectetur debitis mollitia, harum vitae, maxime sint
+                        quod repellendus adipisci reiciendis quos dolore animi
+                        aliquid nesciunt ut dignissimos iusto culpa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rental">
+        <div class="container">
+            <div class="rental__wrapper">
+                <h2 class="rental__heading">Rent</h2>
+                <div class="rental__description">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis, voluptate quis minima illo non mollitia!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Accusamus, inventore.
+                    </p>
+                </div>
+                <ul class="brick-list">
+                    <li class="rental__item brick-list__item">
+                        <a href="offices.html">
+                            <div class="rental__logo">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="44.093"
+                                    height="39.457"
+                                    viewBox="0 0 44.093 39.457"
+                                >
+                                    <path
+                                        id="Path_7237"
+                                        data-name="Path 7237"
+                                        d="M299.191,22.168h-2.462a3.012,3.012,0,0,0-2.969-2.55h-1.827V17.426l.867.715a2.047,2.047,0,0,0,2.773-.1l1.306-1.306A2.04,2.04,0,0,0,297,13.981l-4.252-5.157a1.983,1.983,0,0,0-.162-2.614l-2.76-2.761a3.669,3.669,0,0,0-5.188,0L282.288,5.8a3.668,3.668,0,0,0,0,5.188l2.76,2.761a1.972,1.972,0,0,0,2.615.163l2.025,1.668v4.042h-1.827a3.014,3.014,0,0,0-2.969,2.55H274.275a3.013,3.013,0,0,0-2.969-2.55h-1.827V15.576l2.025-1.669a1.972,1.972,0,0,0,2.615-.163l2.76-2.76a3.669,3.669,0,0,0,0-5.188l-2.347-2.347a3.668,3.668,0,0,0-5.188,0l-2.76,2.76a1.972,1.972,0,0,0-.163,2.616l-4.234,5.136a2.047,2.047,0,0,0,.1,2.774l1.305,1.305a2.05,2.05,0,0,0,1.449.6,1.99,1.99,0,0,0,1.305-.479l.886-.73v2.19h-1.827a3.014,3.014,0,0,0-2.969,2.55h-2.593a2.376,2.376,0,0,0-2.373,2.372v1.726a2.368,2.368,0,0,0,2.134,2.348V39.762a2.071,2.071,0,0,0,2.069,2.069h35.687a2.072,2.072,0,0,0,2.07-2.069V28.614a2.368,2.368,0,0,0,2.133-2.348V24.54A2.375,2.375,0,0,0,299.191,22.168Zm-5.073-5.85-4.841-3.99,1.889-1.889,3.991,4.841ZM283.876,9.395a1.422,1.422,0,0,1,0-2.011l2.347-2.347a1.457,1.457,0,0,1,2.012,0l2.58,2.579-1.073,1.073,0,0L287.529,10.9l0,0-1.073,1.072ZM270.933,5.036a1.457,1.457,0,0,1,2.012,0l2.347,2.347a1.425,1.425,0,0,1,0,2.012l-2.58,2.58L271.639,10.9l0,0L269.426,8.69h0l-1.073-1.073Zm-5.884,11.282L264.01,15.28,268,10.439l.944.944.945.946Zm22.812,5.544h5.9a.77.77,0,0,1,.614.3h-7.126A.767.767,0,0,1,287.861,21.863Zm-22.454,0h5.9a.77.77,0,0,1,.614.3h-7.126A.767.767,0,0,1,265.406,21.863Zm-5.69,2.677a.127.127,0,0,1,.128-.127h39.347a.127.127,0,0,1,.127.127v1.726a.127.127,0,0,1-.127.127H259.844a.128.128,0,0,1-.128-.127Zm37.468,15.045H261.851V28.639h35.334Z"
+                                        transform="translate(-257.471 -2.374)"
+                                        fill="#0095ce"
+                                    />
+                                </svg>
+                            </div>
+                            <h3 class="rental__item-header">Lorem, ipsum.</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="rental__item brick-list__item">
+                        <a href="coworking.html">
+                            <div class="rental__logo">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="45.954"
+                                    height="39.67"
+                                    viewBox="0 0 45.954 39.67"
+                                >
+                                    <path
+                                        id="Path_7238"
+                                        data-name="Path 7238"
+                                        d="M385.3,23.18h-6.973a.769.769,0,0,1-.768-.768v-.2h5.091a2.134,2.134,0,0,0,2.131-2.131V7.442a2.134,2.134,0,0,0-2.131-2.131h-17.7a2.133,2.133,0,0,0-2.131,2.131v12.64a2.133,2.133,0,0,0,2.131,2.131h5.539v.2a.769.769,0,0,1-.769.768h-8.561V20.693a2.957,2.957,0,0,0-2.954-2.954h-7.7a2.957,2.957,0,0,0-2.954,2.954V23.18h-8.206v2.246h2.584V43.858h2.246v-9.82h3.376v2.69h5.441v6.007h-2.465v2.246h7.595V42.735h-2.884V36.728h5.921v-2.69h19.163v9.82h2.246V25.426H385.3ZM382.53,7.557V16.47H365.061V7.557ZM365.061,18.716H382.53v1.25H365.061Zm7.669,3.7v-.2h2.578v.2a2.977,2.977,0,0,0,.111.768h-2.8A3.016,3.016,0,0,0,372.731,22.412Zm-28.559,9.38V25.426h3.376v6.366Zm14.737,2.69h-9.116V20.693a.709.709,0,0,1,.708-.709h7.7a.709.709,0,0,1,.708.709Zm21.409-2.69H361.155V25.426h19.163Z"
+                                        transform="translate(-339.342 -5.311)"
+                                        fill="#0095ce"
+                                    />
+                                </svg>
+                            </div>
+                            <h3 class="rental__item-header">
+                                Lorem, ipsum dolor.
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Fugit!
+                            </p>
+                        </a>
+                    </li>
+                    <li class="rental__item brick-list__item">
+                        <a href="offices.html">
+                            <div class="rental__logo">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="47.422"
+                                    height="33.173"
+                                    viewBox="0 0 47.422 33.173"
+                                >
+                                    <path
+                                        id="Path_7239"
+                                        data-name="Path 7239"
+                                        d="M465.583,21.393H447a2.748,2.748,0,0,0-2.746,2.744v4.835a8.715,8.715,0,0,0-2.193-.565,5.662,5.662,0,0,0,1.453-3.784V12.342a2.094,2.094,0,0,0-2.091-2.092h-10.13a4.735,4.735,0,0,0-4.73,4.73v9.642a5.664,5.664,0,0,0,1.525,3.864A8.8,8.8,0,0,0,420.9,37.12v6.3h46.154V41.178H461.3a.971.971,0,0,1-.97-.971v-.342h5.25a2.747,2.747,0,0,0,2.744-2.744V24.137A2.747,2.747,0,0,0,465.583,21.393ZM446.5,24.137a.5.5,0,0,1,.5-.5h18.584a.5.5,0,0,1,.5.5v9.611h-16.99a8.829,8.829,0,0,0-2.592-3.456Zm-17.692-3.967a9.893,9.893,0,0,0,3.16.539,8.647,8.647,0,0,0,2.246-.293A18.385,18.385,0,0,0,438,18.9a3.813,3.813,0,0,1,1.949-.665c.694.084,1.15.826,1.318,1.15v5.233a3.449,3.449,0,0,1-3.446,3.446h-5.568a3.451,3.451,0,0,1-3.447-3.446Zm9.248,10.408-2.731,3.491-2.8-3.491ZM431.292,12.5h9.975v3.833a3.33,3.33,0,0,0-1.047-.319,5.517,5.517,0,0,0-3.232.889,16.217,16.217,0,0,1-3.358,1.348,7.433,7.433,0,0,1-4.823-.48V14.98A2.487,2.487,0,0,1,431.292,12.5Zm14.581,28.682H423.151V37.12a6.548,6.548,0,0,1,6.5-6.539l5.7,7.105,5.559-7.107h.074a6.548,6.548,0,0,1,6.54,6.541v4.058Zm3.893,0V39.864h2.98v.342a.973.973,0,0,1-.971.971Zm8.487,0h-3.428a3.19,3.19,0,0,0,.166-.971v-.342h3.1v.342A3.164,3.164,0,0,0,458.253,41.178Zm7.33-3.559H449.766v-.5a8.806,8.806,0,0,0-.08-1.126h16.4V37.12A.5.5,0,0,1,465.583,37.619Z"
+                                        transform="translate(-420.905 -10.25)"
+                                        fill="#0095ce"
+                                    />
+                                </svg>
+                            </div>
+                            <h3 class="rental__item-header">Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="pros">
+        <div class="container--wide">
+            <div class="container">
+                <div class="pros__wrapper">
+                    <h2 class="pros__heading">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Nesciunt totam quas libero maxime id unde quia
+                        excepturi suscipit harum fugit.
+                    </h2>
+                    <ul class="pros__list">
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                        <li class="pros__item">Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="become-customer form-box">
+        <div class="container--wide">
+            <div class="container">
+                <form
+                    class="form-box__form become-customer__form"
+                    action="post"
+                >
+                    <h2 class="form-box__heading">
+                        Become a resident <br />
+                        on special terms
+                    </h2>
+                    <label>
+                        <input placeholder="Name" type="text" />
+                    </label>
+                    <label>
+                        <input placeholder="E-mail" type="text" />
+                    </label>
+                    <label>
+                        <input type="tel" placeholder="Phone" />
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Message" />
+                    </label>
+                    <button
+                        class="form-box__button button button--base button--hover-effect"
+                        type="submit"
+                    >
+                        BECOME RESIDENT
+                    </button>
+                    <p class="form-box__policy">
+                        By clicking on the button, you agree to the terms
+                        <a href="#">"Privacy Policy"</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 
-@@include('template/page-footer.html')
-@@include('template/popups.html')
+@@include('template/page-footer.html') @@include('template/popups.html')
 @@include('template/scripts.html')
 
 </body>

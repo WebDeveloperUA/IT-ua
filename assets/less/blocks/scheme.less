@@ -1,0 +1,39 @@
+.scheme {
+    @media @mobile {
+        background-color: rgba(232, 238, 241, 0.3);
+    }
+    &__wrapper {
+        @media @desktop {
+            padding: 120px 140px 80px 140px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+            background-color: rgba(232, 238, 241, 0.3);
+        }
+        @media @tablet {
+            padding: 100px 80px;
+            background-color: rgba(232, 238, 241, 0.3);
+        }
+        @media @mobile {
+            padding: 50px;
+        }
+    }
+    &__left-wrapper {
+        width: 40%;
+        @media @tablet, @mobile {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    &__right-wrapper {
+        width: 40%;
+        @media @tablet, @mobile {
+            width: 100%;
+        }
+    }
+    &__heading {
+        font-weight: 200;
+        font-size: 30px;
+    }
+}

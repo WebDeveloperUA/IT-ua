@@ -1,0 +1,62 @@
+.office-scheme {
+    &__heading {
+        margin-bottom: 15px;
+        @media @mobile {
+            text-align: center;
+        }
+    }
+    &__list {
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 25px;
+            top: 35px;
+            left: 0;
+            background-image: url(../img/arrow2.svg);
+            background-repeat: no-repeat;
+            transform: rotate(180deg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 25px;
+            top: 39px;
+            right: 0;
+            background-image: url(../img/arrow2.svg);
+            background-repeat: no-repeat;
+            transform: rotate(0);
+        }
+    }
+    &__item {
+        margin-right: 10px;
+        font-size: 20px;
+        color: #0095ce;
+        @media @tablet {
+            margin-right: 30px;
+        }
+        &--current {
+            font-size: 80px;
+            color: black;
+        }
+    }
+    &__img {
+        width: 100%;
+        max-height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+            object-fit: contain;
+            max-width: 100%;
+        }
+    }
+}

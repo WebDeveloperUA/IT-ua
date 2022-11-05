@@ -1,41 +1,58 @@
-.button{
-    border: none;
+.button {
+    border: 1px solid transparent;
     background-color: transparent;
     padding: 0;
     margin: 0;
     font-weight: bold;
     font-size: 12px;
-        &--base{
-            background-color: @brand-color;
-            color: white;
-            padding: 15px 30px;
-                @media @mobile {
-                    width: 100%;
-                }
+    &--base {
+        background-color: @brand-color;
+        color: white;
+        padding: 15px 30px;
+        @media @mobile {
+            width: 100%;
         }
-        &__reset{
-            padding: 0;
-            border: 0;
-            background-color: transparent;
+    }
+    &__reset {
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    &--lang {
+        padding: 15px;
+        border: 3px solid #e8eef1;
+        @media @mobile {
+            box-shadow: 0 0 4px @brand-color;
+            text-shadow: 0 0 0 @brand-color;
+        }
+        &:hover {
+            border: 3px solid @brand-color;
             cursor: pointer;
+            transition: 0.7s;
         }
-        &--lang{
-            padding: 15px;
-            border: 3px solid #E8EEF1;
-                &:hover{
-                    border: 3px solid @brand-color;
-                    cursor: pointer;
-                    transition: 0.7s;
-                }
-        }
-        &__resident{
-            border: 1px solid transparent;
-            &:hover{
-                background-color: white;
-                color: @brand-color;
-                border: 1px solid @brand-color;
-                cursor: pointer;
-                transition: 0.7s;
+        &.page-header__mobile-closed {
+            @media @mobile {
+                border: 3px solid white;
+                color: white;
             }
         }
+    }
+    &__resident {
+        border: 1px solid transparent;
+        &:hover {
+            background-color: white;
+            color: @brand-color;
+            border: 1px solid @brand-color;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+    }
+    &--hover-effect:hover {
+        background-color: white;
+        color: @brand-color;
+        border: 1px solid @brand-color;
+        cursor: pointer;
+        transition: 0.7s;
+    }
 }

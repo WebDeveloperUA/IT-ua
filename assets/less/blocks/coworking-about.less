@@ -1,0 +1,37 @@
+.coworking-about {
+    padding: 120px 0;
+    & .container--wide {
+        position: relative;
+        background-color: rgba(232, 238, 241, 0.3);
+        @media @desktop {
+            min-height: 620px;
+        }
+    }
+    &__wrapper {
+        @media @desktop, @tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        & > div {
+            background-color: white;
+            box-shadow: 2px 2px 12px 4px rgba(127, 147, 157, 15%);
+            padding: 80px;
+            @media @tablet {
+                padding: 50px;
+            }
+            @media @mobile {
+                padding: 10px;
+            }
+        }
+    }
+    &__heading {
+        font-size: 30px;
+        font-weight: 100;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__item {
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+.main-contacts {
+    &__wrapper {
+        padding: 100px 0;
+        & > div {
+            @media @mobile {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+    &__heading {
+        font-size: 60px;
+        font-weight: 200;
+        margin-bottom: 50px;
+        @media @mobile {
+            text-align: center;
+        }
+    }
+    & p {
+        margin-bottom: 30px;
+        @media @mobile {
+            text-align: center;
+            font-size: 23px;
+        }
+    }
+}

@@ -1,52 +1,52 @@
-.about{
-    &__wrapper{
+.about {
+    &__wrapper {
         position: relative;
         padding: 100px 0 170px 0;
-            @media @tablet {
-                padding: 50px 0 50px 0;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                column-gap: 20px;
-            }
-            @media @mobile {
-                padding: 50px 0 50px 0;
-            }
+        @media @tablet {
+            padding: 50px 0 50px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+        }
+        @media @mobile {
+            padding: 50px 0 50px 0;
+        }
     }
-    &__info{
+    &__info {
         width: 40%;
         font-size: 14px;
-            & p:first-of-type{
-                margin-bottom: 40px;
-            }
-            @media @tablet {
-                width: 100%;
-            }
-            @media @mobile {
-                width: 100%;
-                font-size: 20px;
-            }
+        & p:first-of-type {
+            margin-bottom: 40px;
+        }
+        @media @tablet {
+            width: 100%;
+        }
+        @media @mobile {
+            width: 100%;
+            font-size: 20px;
+        }
     }
-    &__heading{
+    &__heading {
         font-size: 25px;
         margin-bottom: 25px;
     }
-    &__resident{
+    &__resident {
         width: 40%;
         position: absolute;
         top: -20px;
         right: 0;
         background-color: white;
         padding: 120px 90px;
-        box-shadow: -1px 0px 5px -2px #7F939D;
-            @media @tablet {
-                position: static;
-                width: 100%;
-                padding: 40px 60px;
-            }
-            @media @mobile {
-                width: 100%;
-                position: static;
-                padding: 40px 20px;
-            }
+        box-shadow: -1px 0px 5px -2px #7f939d;
+        @media @tablet {
+            position: static;
+            width: 100%;
+            padding: 40px 60px;
+        }
+        @media @mobile {
+            width: 100%;
+            position: static;
+            padding: 40px 20px;
+        }
     }
 }

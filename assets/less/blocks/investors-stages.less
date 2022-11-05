@@ -1,0 +1,44 @@
+.investors-stages {
+    & .container--wide {
+        background-color: rgba(232, 238, 241, 0.3);
+    }
+    &__wrapper {
+        padding: 115px 0;
+    }
+    &__heading {
+        font-weight: 100;
+        font-size: 25px;
+        margin-bottom: 60px;
+        @media @mobile {
+            text-align: center;
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @media @desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 50px;
+        }
+        @media @tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+    }
+    &__item {
+        font-size: 12px;
+        line-height: 20px;
+        @media @mobile {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+    &__item-heading {
+        color: #0095ce;
+        font-weight: 100;
+        font-size: 17px;
+    }
+}

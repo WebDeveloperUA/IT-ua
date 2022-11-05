@@ -1,0 +1,59 @@
+.pros {
+    position: relative;
+    & .container--wide {
+        background-color: rgba(232, 238, 241, 0.3);
+        position: relative;
+        @media @desktop {
+            padding: 200px 0 100px 0;
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url(../img/pros-back.png);
+                top: 50px;
+                left: 60px;
+                width: 315px;
+                height: 135px;
+            }
+        }
+    }
+    &__wrapper {
+        @media @tablet, @mobile {
+            padding: 40px 0 20px 0;
+        }
+    }
+    &__heading {
+        margin-bottom: 60px;
+        line-height: 35px;
+        @media @desktop {
+            width: 50%;
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 30px;
+        width: 30%;
+        @media @tablet {
+            width: 50%;
+        }
+        @media @mobile {
+            width: 50%;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: #0095ce;
+            left: 0;
+            top: 50%;
+        }
+    }
+}
