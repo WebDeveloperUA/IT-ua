@@ -2,12 +2,12 @@
 
 ### :grey_question: About:
 - This is a project, the design of which was created by me to train the skills acquired in the training process.
+- This project is not intended to serve any practical purpose, but rather to enhance the skills gained during training.
 
 ### :ballot_box_with_check: Tasks that were set:
-- create an adaptive version of the website with three breakpoints (for desktop, tablet and mobile phone)
-- add an interactive map
-- add validation to the form in case of incorrect data entry
-- add a pop-up that appears in case of successful submission of the form
+- Develop an adaptive website with three breakpoints to ensure that it's optimized for desktop, tablet, and mobile phone users.
+- Develop a homepage that provides users with an introduction to the presented project and allows them to become acquainted with it.
+- Design and implement different sections that will serve the required functions.
 
 ### :hammer_and_wrench: The technologies I used for this:
 - HTML and CSS/LESS
